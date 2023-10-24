@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Assignment/Assignment.iml" filepath="$PROJECT_DIR$/Assignment/Assignment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaApplication5/JavaApplication5.iml" filepath="$PROJECT_DIR$/JavaApplication5/JavaApplication5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab4/Lab4.iml" filepath="$PROJECT_DIR$/Lab4/Lab4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab_01/Lab_01.iml" filepath="$PROJECT_DIR$/Lab_01/Lab_01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/NetBeansProjects.iml" filepath="$PROJECT_DIR$/.idea/NetBeansProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/firstProject/firstProject.iml" filepath="$PROJECT_DIR$/firstProject/firstProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab3/lab3.iml" filepath="$PROJECT_DIR$/lab3/lab3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab5/lab5.iml" filepath="$PROJECT_DIR$/lab5/lab5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myproject/myproject.iml" filepath="$PROJECT_DIR$/myproject/myproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project2/project2.iml" filepath="$PROJECT_DIR$/project2/project2.iml" />
+    </modules>
+  </component>
+</project>
