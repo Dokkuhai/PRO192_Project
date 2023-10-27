@@ -27,7 +27,8 @@ public class antiqueShop {
             System.out.println("7. remove the item by its index");
             System.out.println("8. display the list of vase items ");
             System.out.println("9. sorts items in ascending order based on their values ");
-            System.out.println("10. exit");
+            System.out.println("10. Export to the file");
+            System.out.println("11. exit");
             System.out.print("input your choice:");
             choice = sc.nextInt();
             switch (choice) {
@@ -60,13 +61,16 @@ public class antiqueShop {
                     
                 case 5:
                     System.out.print("Input the creator to find: ");
-                    String tmpCreator = sc.nextLine();
+                    String tmpCreator = sc.next();
                     Item found = obj.findItem(tmpCreator);
                     if(found != null){
-                        System.out
+                        System.out.println("Item found : " + found);
                     }
+                    else System.out.println("Item not found!");
+                case 6:
+                   
                     
             }//end switch
-        }while (choice <= 9); //end while
+        }while (choice <= 10); //end while
     }
 }  //end class

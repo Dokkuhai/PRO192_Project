@@ -74,7 +74,12 @@ public class Vase extends Item {
     
     
     //this method  is used to input all fields of a Vase object
-    public void input() {
+    
+    
+    
+    
+    public void inputVase() {
+        super.input(); //To change body of generated methods, choose Tools | Templates.
         //use Scanner class to input fields
         Scanner input = new Scanner(System.in);
         //use try..catch/throws to handle exceptions
@@ -97,7 +102,11 @@ public class Vase extends Item {
                 System.out.println("Input not valid!" + e.getMessage());
             }
         }
+        
+        
     }
+
+   
     //this method returns a string that includes  value, creator, height, material  of a vase object 
 
     @Override
