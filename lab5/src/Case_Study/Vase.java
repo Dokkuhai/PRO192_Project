@@ -62,6 +62,7 @@ public class Vase extends Item {
         this.material = material;
     }
 
+    @Override
     public void setValue(int value) {
         this.value = value;
     }
@@ -78,13 +79,25 @@ public class Vase extends Item {
     
     
     
-    public void inputVase() {
-        super.input(); //To change body of generated methods, choose Tools | Templates.
-        //use Scanner class to input fields
+    @Override
+    public void input() {
         Scanner input = new Scanner(System.in);
         //use try..catch/throws to handle exceptions
         while (true) {
             try {
+                
+                System.out.print("Input value: ");
+                value = input.nextInt();
+                if (value < 0) {
+                    throw new Exception("Value must be a positive number.");
+                }
+                
+                System.out.print("Input creator: ");
+                creator = input.next();
+                if(creator.isEmpty()){
+                    throw new Exception("Creator can not be empty");
+                }
+                
                 System.out.print("Input height: ");
                 height = input.nextInt();
                 if (height < 0 || height >2000 ) {
@@ -92,8 +105,8 @@ public class Vase extends Item {
                 }
 
                 System.out.print("Input material: ");
-                creator = input.next();
-                if (creator.isEmpty()) {
+                material = input.next();
+                if (material.isEmpty()) {
                     throw new Exception("Creator can not be empty");
                 }
 
@@ -111,7 +124,7 @@ public class Vase extends Item {
 
     @Override
     public String toString() {
-        return "Vase{" + "value = " + value + "creator = " + creator + "height=" + height + ", material=" + material + '}'; 
+        return "Vase |" + "value = " + value + "| creator = " + creator + "| height=" + height + "| material=" + material + '|'; 
     }
 
     

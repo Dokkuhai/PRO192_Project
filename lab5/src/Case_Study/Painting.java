@@ -104,6 +104,20 @@ public class Painting extends Item {
         
         while (true) {
             try {
+                
+                System.out.print("Input value: ");
+                value = input.nextInt();
+                if (value < 0) {
+                    throw new Exception("Value must be a positive number.");
+                }
+                
+                System.out.print("Input creator: ");
+                creator = input.next();
+                if(creator.isEmpty()){
+                    throw new Exception("Creator can not be empty");
+                }
+                
+                
                 System.out.print("Input height: ");
                 height = input.nextInt();
                 if (height < 0 || height > 2000) {
@@ -142,7 +156,7 @@ public class Painting extends Item {
 
     @Override
     public String toString() {
-        return "Painting{" + "height=" + height + ", width=" + width + ", isWatercolour=" + isWatercolour + ", isFramed=" + isFramed + '}';
+        return "Painting |" + "height=" + height + "| width=" + width + "| isWatercolour=" + isWatercolour + "| isFramed=" + isFramed + '|';
     }
 
     

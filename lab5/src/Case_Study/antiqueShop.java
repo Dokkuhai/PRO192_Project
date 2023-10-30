@@ -67,8 +67,32 @@ public class antiqueShop {
                         System.out.println("Item found : " + found);
                     }
                     else System.out.println("Item not found!");
+                    
+                    break;
                 case 6:
-                   
+                    System.out.print("Input index: ");
+                    int tmpIndex = sc.nextInt();
+                    obj.updateItem(tmpIndex);
+                    break;
+             
+                case 7:
+                    System.out.print("Input index: ");
+                    tmpIndex = sc.nextInt();
+                    obj.removeItem(tmpIndex);
+                    break;
+                case 8:
+                    System.out.print("What do you want to display(Vase, Statue or Painting): ");
+                    String tmpDisplay = sc.next();
+                    obj.displayItemsByType(tmpDisplay);
+                    break;
+                case 9:
+                    System.out.println("Itemlist before sort: ");
+                    obj.displayAll();
+                    System.out.println("Itemlist after sort: ");
+                    obj.sortItem();
+                    obj.displayAll();
+                    break;
+                case 10:
                     
             }//end switch
         }while (choice <= 10); //end while

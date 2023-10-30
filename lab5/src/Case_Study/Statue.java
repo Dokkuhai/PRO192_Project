@@ -69,6 +69,19 @@ public class Statue extends Item {
         
         while (true) {
             try {
+                
+                System.out.print("Input value: ");
+                value = input.nextInt();
+                if (value < 0) {
+                    throw new Exception("Value must be a positive number.");
+                }
+                
+                System.out.print("Input creator: ");
+                creator = input.next();
+                if(creator.isEmpty()){
+                    throw new Exception("Creator can not be empty");
+                }
+                
                 System.out.print("Input height: ");
                 weight = input.nextInt();
                 if (weight < 0 || weight > 1000) {
@@ -80,7 +93,7 @@ public class Statue extends Item {
                 if (colour.isEmpty()) {
                     throw new Exception("Color can not be empty");
                 }
-
+                    
                 break; // breakdown the loop when input is valid!
             } catch (Exception e) {
                 System.out.println("Input not valid!" + e.getMessage());
@@ -92,6 +105,6 @@ public class Statue extends Item {
 
     @Override
     public String toString() {
-        return "Item{" + "value=" + value + ", creator=" + creator + "weight=" + weight + "color=" + colour +'}';
+        return "Statue{" + "value=" + value + ", creator=" + creator + ", weight=" + weight + ", color=" + colour +'}';
     }
 }
