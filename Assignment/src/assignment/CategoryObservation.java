@@ -1,14 +1,28 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package assignment;
 
-/**
- *
- * @author vuduchai
- */
-public class CategoryObservation extends Observation{
-    
+/*
+This class is just a skeleton. Add your code where necessary. You might need to add additional methods as well.  
+*/
+public class CategoryObservation extends Observation
+{
+	private String value;
+
+	public CategoryObservation(CategoryObservationType observationType, String value) //you may add to this method header
+	{
+            super(observationType);
+            this.value = value;
+	}
+
+   
+        
+        
+        
+	//override patent class abstract method here...
+
+	//other methods...
+
+    @Override
+    public String getObservationDetails() {
+        return " ";
+    }
 }
